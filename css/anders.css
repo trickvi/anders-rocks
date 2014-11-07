@@ -1,0 +1,51 @@
+body {
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+	font-weight: 200;
+}
+
+.hello {
+	background-color: #7AB800;
+	height: 600px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+}
+
+.intro {
+	font-size: 82px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 15%;
+}
+
+.poem {
+	max-width: 100%;
+	position: relative;
+	top: 500px;
+	padding: 50px;
+	background-color: #fff;
+}
+
+.poem p {
+    font-size: 33px;
+}
+
+.poem p:after {
+    display:block;
+    height: 50px;
+    width: 50px;
+    margin: 10px auto;
+    content:"";
+    background-image:url("../foundation-icons/svgs/fi-heart.svg");
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+}
+
+.poem p:last-child:after {
+   background-image: none;
+}
