@@ -1,40 +1,86 @@
 body {
-	font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-	font-weight: 200;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+    font-weight: 200;
+}
+@media only screen, @media only screen and (max-width: 40em) { 
+    .hello {
+	background-color: #7AB800;
+	background-image: none;
+    }
+    .poem p {
+	font-size: 20px;
+    }
+
+    .poem p i:after {
+	margin: 0 10px;
+	content: "/";
+	font-weight: bold;
+	color: #aaa;
+    }
+}
+
+@media only screen and (min-width: 40.063em), @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .hello {
+	background-color: #7AB800;
+	background-image: none;
+    }
+    .poem p {
+	font-size: 18px;
+    }
+
+    .poem p i:after {
+	display: inline;
+	width: 40;
+	content:"\A";
+	white-space:pre;
+    }
+}
+
+
+@media only screen and (min-width: 64.063em), @media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+    .hello {
+	background-color: #fff;
+	background-image: url("../img/anders.jpg");
+    }
+
+    .poem p {
+	font-size: 33px;
+    }
+
+    .poem p i:after {
+	display: inline;
+	width: 40;
+	content:"\A";
+	white-space:pre;
+    }
 }
 
 .hello {
     display:block;
-	background-color: #fff;
-	background-image: url("../img/anders.jpg");
-	height: 700px;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-	background-size: cover;
-	position: fixed;
-	width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
 }
 
 .intro {
-	font-size: 82px;
-	color: #fff;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 15%;
+    font-size: 82px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15%;
 }
 
 .poem {
-	max-width: 100%;
-	position: relative;
-	top: 700px;
-	padding: 50px;
-	background-color: #fff;
-}
-
-.poem p {
-    font-size: 33px;
+    max-width: 100%;
+    position: relative;
+    top: 700px;
+    padding: 50px;
+    background-color: #fff;
 }
 
 .poem p:after {
